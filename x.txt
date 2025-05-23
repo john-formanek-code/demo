@@ -18,3 +18,53 @@ git cheackout ______ (id commitu) --> vrátí se do staré verze
 
 Commit --> složka, kde pracují=>GIT ADD -->Staging area=> GIT COMMIT --> repository
 staging area je protože, pokud upravím více věcí a chci poslat jenom něco
+
+_________
+udělal jsem commit ale zapoměl jsem přidat další soubor-->
+git add ______
+git commit --amend --> přidá soubor do posledního commitu --otevře se okno tam se to dá ještě dál upravit a zavřít
+
+_________
+tajný soubor
+
+touch .gitignore - vytvoří se nový soubor- do kterého napíšu např. secrets.txt 
+--> tento soubor vytvořím a píšu a změny se neevidují
+____________
+Branch
+
+mám chybu v kodu a nechci si ji rozbít asi např ve 3 -- tak si rozdělím 3 na a,b,c
+když vypíšu jednotlivé logy tak jsou to ty bodíky na Branch
+
+git branch - vypíšu
+
+git branch _______ --> vytvořím nový branch
+
+git switch _______ --> přepnu na ten branch od 3 na a,b,c
+
+git switch -c ______  --> vytvořím branch a rovnou do ní přepnu
+______
+Head 
+ukazuje na součsnou pozici ve vašem repository (na commmit v určié větvi)
+neustále ukazuje na nové commity (poslední commit)
+
+pokud mám 4 commity v master branch tak je head u 4 
+--> pokud přepnu na bug branch a tam mám a,b,c tak head je u c
+
+pokud vytvořím v 1 větve něco tam vytvořím a necommituji to a pak přepnu do 2 tak se ten commmit vloží do druhé i když jsem ho vytvořil v 1
+____
+
+git branch  -d _________ --> vymaže branch
+git branch -m _________ --> přejmenuje branch
+
+git branch -D _________ --> vymaže branch i když je tam nejnovější commit
+
+_________
+Merging
+
+Fast forward branch
+když chci mergovat tak musím být v master
+
+git merge ______  --> 
+
+_______
+když je nějaký konflict tak se zeptej chatgpt
