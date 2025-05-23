@@ -1,0 +1,20 @@
+git init 
+
+git status
+
+git add ____ / git add . (všechno)  --> je to stagong area
+
+git commit -m "první commit" --> repository / pokud nedám -m -- tak mě to přesměruje do souboru kde zadávám a pak to zavřu
+
+....
+opakuje se znovu -- git add, git commit
+
+_________
+git log --oneline
+
+git show ______ (id commitu)
+
+git cheackout ______ (id commitu) --> vrátí se do staré verze
+
+Commit --> složka, kde pracují=>GIT ADD -->Staging area=> GIT COMMIT --> repository
+staging area je protože, pokud upravím více věcí a chci poslat jenom něco
